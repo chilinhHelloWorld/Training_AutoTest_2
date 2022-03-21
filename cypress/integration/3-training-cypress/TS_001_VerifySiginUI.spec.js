@@ -27,3 +27,35 @@ describe('Testing UI Sigin', ()=> {
     create.getRegisterButton().should("be.enabled");
   })
 })
+
+// describe('My First Cypress Test', function() {
+//   it('Visits the ToolsQA Demo Page and check the menu items', function() {
+//   //Visit the Demo QA Website
+//   cy.visit("https://demoqa.com/");
+  
+//  // Clicking on Widget Menu Item
+//   cy.get(':nth-child(4) > :nth-child(1) > .avatar > svg').click();
+
+//   //Verify number of items present under the Widget Tab
+//   cy.get(':nth-child(4) > .element-list > .menu-list > li').should('have.length',9);
+
+//   //Verify the number of span items under the Widgets Tab
+//   cy.get(':nth-child(4) > .element-list > .menu-list > li').find('span').should('have.length',9).then(() => { 
+//     //Handling Async behavior using then method 
+//     console.log('Using Mocha Log'); 
+//   })
+//   cy.log('Using Cypress Log');
+//   cy.then(() => {
+//     cy.wrap(10).then(() => {
+//         return 42;
+//     });
+// }).should('eq', 42);
+// const getName = () => {
+//   return 'Jane Lane'
+// }
+
+// cy.wrap({ name: getName }).invoke('name').then((e) => {
+//   console.log(e);
+// })
+// })
+// })
