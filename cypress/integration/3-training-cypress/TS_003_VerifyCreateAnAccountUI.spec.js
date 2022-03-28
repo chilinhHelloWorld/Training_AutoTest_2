@@ -5,17 +5,17 @@ import LoginPageCreateTag from '../../support/PageObject/CreateAccountForm/Creat
 import HomePage from '../../support/PageObject/HomePage/HomePage'
 
 describe('Testing UI Sigin', ()=> {
-  var create = new LoginPageCreateTag();
+  var createAcc = new LoginPageCreateTag();
   var home = new HomePage();
   var createPage = new CreatePage ()
   beforeEach(()=>{
-    cy.visit('http://automationpractice.com/index.php')
+    cy.visit('/')
     home.getSiginButton().click();
-    create.getEmailInputCreate().type('nguyenchilinhfanpage7@gmail.com');
-    create.getRegisterButton().click();
+    createAcc.getEmailInputCreate().type('nguyenchilinhfanpage7@gmail.com');
+    createAcc.getRegisterButton().click();
   })
-
-  it('TC_004_CheckAvailabilityAllObjectivesCreatePage', () => {
+  
+  it('TC_007_Check Availability All Objectives Create Page', () => {
     createPage.getFirstNameInput().should('be.visible');
     createPage.getLastNameInput().should('be.visible');
     createPage.getEmailInput().should('be.visible');
@@ -31,7 +31,7 @@ describe('Testing UI Sigin', ()=> {
     createPage.getAliasInput().should('be.visible');
     createPage.getSubmitButton().should('be.visible');
   })
-  it('TC_005_CheckEnableButtonRegister', () => {
+  it('TC_008_Check Enable Button Register', () => {
     createPage.getSubmitButton().should('be.enabled');
   })
 })

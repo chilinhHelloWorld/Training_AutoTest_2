@@ -9,5 +9,8 @@ class LoginPageCreateTag {
     getRegisterButton() {
         return cy.xpath('//button[@id="SubmitCreate"]');
     }
+    getErrorMessage() {
+        return cy.xpath('//div[@id="create_account_error"]//ol//li');
+    }
 }
 export default LoginPageCreateTag;

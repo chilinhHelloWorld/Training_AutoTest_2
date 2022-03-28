@@ -34,7 +34,7 @@ class ErrorMessage {
         return cy.xpath('//div[@class="alert alert-danger"]/ol/li[07]')
     }
 
-    getErrorNumberEight () {
+    getErrorNumberEight (number) {
         return cy.xpath('//div[@class="alert alert-danger"]/ol/li[08]')
     }
 }

@@ -1,0 +1,17 @@
+[
+    {
+        "firstName" : "Linh",
+        "lastName" : "Nguyen",
+        "password" : "123456789",
+        "phoneMobile" : "0987654321",
+        "address1" : "Kanto",
+        "city" : "Kanto",
+        "postCode" : "90000",
+        "state" : "Alaska"
+    },
+    {
+        "accountExsit": "chilinh361@gmail.com",
+        "accountInvalid": "chilinh361@gmail",
+        "accountValid" : "nguyenchilinhfanpage7@gmail.com"
+    }
+]
